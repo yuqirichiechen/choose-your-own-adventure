@@ -1,35 +1,41 @@
 # ToDo
 
-## right now
-- [ ] convert story data to JSON so the web app can use it
-- [ ] get a basic reader working (show page text + choice buttons)
-- [ ] set up the project as a static site we can deploy
+## Completed ✓
+- [x] extract story pages from PDF using OCR (output/cot-pages-ocr-v2/)
+- [x] build story graph from extracted pages (output/cot-story-graph.mmd)
+- [x] generate all story variants (output/cot-stories/ with manifest.json)
+- [x] render story graph as SVG (output/cot-story-graph.svg)
 
-## reader
+## Right Now - Core Web App
+- [ ] convert story data to JSON format for web app consumption
+- [ ] build basic web reader (show page text + choice buttons)
+- [ ] set up project as static site for deployment
+
+## Reader UI Development
 - [ ] load Cave of Time pages from JSON
-- [ ] show choices at the bottom of each page
-- [ ] back button / restart
-- [ ] mobile friendly
-- [ ] track which pages you've visited
+- [ ] display page text and show choices at the bottom
+- [ ] add back button / restart functionality
+- [ ] make mobile friendly
+- [ ] track which pages user has visited
 
-## editor / authoring tool
+## Editor / Authoring Tool
 - [ ] card-based layout for editing pages
 - [ ] add/remove choices on a page
 - [ ] create new pages
-- [ ] mini graph preview so you can see connections
-- [ ] test mode - play through your story to check branches
+- [ ] mini graph preview to see connections
+- [ ] test mode to play through story and check branches
 
-## graph stuff
-- [ ] interactive story graph visualization
-- [ ] highlight where you are / where you've been
-- [ ] click a node to jump to that page
+## Interactive Graph Features
+- [ ] interactive story graph visualization (web version)
+- [ ] highlight current location and pages visited
+- [ ] click node to jump to that page
 
-## deploy
-- [ ] github pages setup
-- [ ] make sure everything works as static files
-- [ ] update README with site url and repo url
+## Deployment
+- [ ] set up GitHub Pages
+- [ ] verify everything works as static files
+- [ ] update README with site URL and repo URL
 
-## stretch goals (if we have time)
-- [ ] ending stats ("you found 1 of 45 endings")
+## Stretch Goals (if time permits)
+- [ ] ending stats ("you found X of Y endings")
 - [ ] share button
 - [ ] import/export stories as JSON
